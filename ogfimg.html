@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGFImg - minimapper</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1a1a1a;
+            color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            flex-direction: column;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        /* Global Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content {
+            max-width: 1000px;
+            width: 80%;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        /* Slide-in Animation for the Content */
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #58a6ff;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        /* Typing Animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #58a6ff;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards 1s;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards 2s;
+        }
+
+        .section-content {
+            margin-left: 20px;
+            font-size: 1.1rem;
+        }
+
+        .button {
+            background-color: #58a6ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #d3d3d3;
+        }
+
+        .footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+		
+		a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="hero">OGFImg Project</div>
+		
+		<div class="section">
+            <h2>General</h2>
+            <div class="section-content">
+                <p>OGFImg is a project I made (that is not being updated by nouxinf) to download then "stitch" tiles from any tile map of your choosing.</p>
+                <p>Right now it has 7 layers to download from :D</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Installation</h2>
+            <div class="section-content">
+                <p>To get started with OGFImg, simply download the latest version from the GitHub repo <a href="https://github.com/minimapper-ogf/ogfimg">Here</a>.</p>
+                <p>Download all of the dependencies with:</p>
+                <pre>pip install flask requests pillow</pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Usage</h2>
+            <div class="section-content">
+                <p>After installation, you can run the following command to start using OGFImg:</p>
+                <pre>python app.py</pre><p> (or just run the app.py)</p>
+                <p>From there move to localhost:5000</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Fun Facts</h2>
+            <div class="section-content">
+                <p>When developing OGFImg, I experimented with several Python libraries to handle image processing efficiently, including Pillow and OpenCV. It was a fun journey!</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Version History</h2>
+            <div class="section-content">
+                <p><strong>Version 1.0.0</strong> - Initial release</p>
+                <p><strong>Version 1.1.0</strong> - Added more image processing options</p>
+                <p><strong>Version 1.2.0</strong> - Bug fixes and performance improvements</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <a href="https://github.com/your-repo/OGFImg" class="button">View GitHub Repo</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>File Size: 12MB | <a href="https://your-repo-link.com">Project Repository</a> | Created by YourName</p>
+    </div>
+</body>
+</html>
