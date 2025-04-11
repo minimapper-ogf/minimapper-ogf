@@ -12,10 +12,10 @@ Check out my GitHub Pages site here: [minimapper-ogf.github.io](https://minimapp
 
 Here are a few things I've made:
 
-- 🔧 **OGFImg** – OGF Image/tile downloader and stitcher, now also lets you download some OGF map layers!
-- 🎮 **HDYCTOGF** – A very quickly made tool to see how did you contribute to OpenGeofiction? Was mainly made with ChatGPT and was really more for fun then for anything functional
-- 🤖 **Minitracker** – A website that is still very buggy but tracks Roblox games stats. Based on Rolimons and made to track the games they wont.
-- 🗂️ **Mishota Wiki** – Its just a wiki for my state of Mishota on Opengeofiction.net
+- **OGFImg** – OGF Image/tile downloader and stitcher, now also lets you download some OGF map layers!
+- **Wikisoft** - Currently just using a name I pased in instead of the real on accident but its a bare-bones wiki stored in txt files but saved as my own slightly changed version of markdown. 
+- **Minitracker** – A website that is still very buggy but tracks Roblox games stats. Based on Rolimons and made to track the games they wont.
+- **HDYCTOGF** – A very quickly made tool to see how did you contribute to OpenGeofiction? Was mainly made with ChatGPT and was really more for fun then for anything functional
 
 
 ---
