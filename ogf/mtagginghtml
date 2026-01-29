@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiki Page - minimapper.me</title>
+<style>
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Page container */
+    .container {
+        width: 60%;
+        min-width: 800px;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        min-height: 100vh;
+    }
+
+    /* Top menu bar */
+    .top-bar {
+        background: #cce0ff;
+        padding: 10px 20px;
+        border-bottom: 2px solid #99c2ff;
+        display: flex;
+        align-items: center;
+    }
+
+    .top-bar a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #003366;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .site-title {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-right: 30px;
+    }
+
+    /* Wiki Content Headers */
+    h1 {
+        border-bottom: 1px solid #a2a9b1;
+        margin-bottom: 0.25em;
+        padding: 0;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        border-bottom: 1px solid #a2a9b1;
+        margin-top: 1.5em;
+        font-size: 1.5rem;
+    }
+
+    /* Infobox Styling */
+    .infobox {
+        float: right;
+        width: 280px;
+        background: #f8f9fa;
+        border: 1px solid #a2a9b1;
+        padding: 5px;
+        margin: 0 0 1em 1em;
+        font-size: 0.85rem;
+    }
+
+    .infobox-title {
+        text-align: center;
+        background: #cce0ff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 5px;
+        border: 1px solid #99c2ff;
+    }
+
+    .infobox img {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    .infobox table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .infobox th {
+        text-align: left;
+        width: 40%;
+        padding: 4px;
+        vertical-align: top;
+    }
+
+    .infobox td {
+        padding: 4px;
+    }
+
+    /* Content Table Styling */
+    .content-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
+        font-size: 0.9rem;
+    }
+
+    .content-table th {
+        background: #cce0ff;
+        border: 1px solid #99c2ff;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .content-table td {
+        border: 1px solid #dcdcdc;
+        padding: 8px;
+    }
+
+    .content-table tr:nth-child(even) {
+        background: #fcfcfc;
+    }
+
+    /* Article Body */
+    .article-body {
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    .divider {
+        height: 4px;
+        background: #99c2ff;
+        margin: 10px 0;
+    }
+
+    /* Sidebar/Table of Contents box */
+    .toc {
+        background: #f8f9fa;
+        border: 1px solid #a2a9b1;
+        padding: 10px;
+        display: inline-block;
+        margin-bottom: 1em;
+        font-size: 0.9rem;
+    }
+
+    .toc-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .toc ul {
+        list-style: none;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .toc a {
+        text-decoration: none;
+        color: #0073e6;
+    }
+
+    .toc a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <a href="https://minimapper.net" class="site-title">minimapper.net</a>
+        <a href="https://minimapper.net">RTracker</a>
+        <a href="https://minimapper.net/ogf">OGF</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="article-body">
+        <h1>Tagging Guidelines for Mishota</h1>
+
+        <!--
+        <aside class="infobox">
+            <div class="infobox-title">State of Mishota</div>
+            <img src="https://placehold.co/280x180" alt="Flag/Map of Mishota">
+            <table>
+                <tr><th>Capital</th><td>Oakhaven</td></tr>
+                <tr><th>Region</th><td>FSA Central</td></tr>
+                <tr><th>Population</th><td>1.2 Million</td></tr>
+                <tr><th>Founded</th><td>1992</td></tr>
+                <tr><th>Language</th><td>English</td></tr>
+            </table>
+        </aside>
+        -->
+
+        <p>
+            <strong>Welcome!</strong> if you are reading this there is a good chance its because you are looking to add your brand to a empty position in Mishota. This short article is here as a guuideline for that (in the futuer though this will contain more)
+        </p>
+        <p>
+            Tagging is the exact same as it is for any other location plus a few extra keys and tags.
+        </p>
+
+        <div class="toc">
+            <div class="toc-title">Contents</div>
+            <ul>
+                <li>1. <a href="">Top of page</a></li>
+                <li>2. <a href="#ccode">ccode</a></li>
+                <li>3. <a href="#notes">Extra Notes</a></li>
+            </ul>
+        </div>
+
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>name</td>
+                    <td>The name of your brand</td>
+                    <td>"Planet Desktop""</td>
+                </tr>
+                <tr>
+                    <td>employees</td>
+                    <td>The number of employees that chain location employs</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>ms:ccode</td>
+                    <td>State specific company/brand code. The first two characters define the location the other five are the brands unique code identifier. If the brand has multipule locations all of them share the same code.</td>
+                    <td>VS-23SJ1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="ccoode">ccode</h2>
+
+        <p>
+            Company ccode's are used for information on all businesses in the state. Codes are first defined with a location identifier, all codes with two characters are county specific and only reside in that county, all with a I- code are only in the state but are in multipule counties in the state, G- is for "global" businesses which is defined as all businesses that have at least one location out of state.
+        </p>
+
+        <p>
+            If a business has more than one location in the state both locations will use the same code. An exmaple currently is G-SMART which has two locations in state but both of them use the G-SMART code.
+        </p>
+
+        <p>
+            As a side note businesses can have "custom codes" that are ones they asked for that are open. Otherwise the code should be random.
+        </p>
+
+        <h2 id="notes">Extra Notes</h2>
+        <p>
+            Eventually on this website there will be a page to preview a list of all businesses in mishota as well as some info related to them.
+        </p>
+
+        <!--
+        <div class="toc">
+            <div class="toc-title">Contents</div>
+            <ul>
+                <li>1. <a href="#history">History</a></li>
+                <li>2. <a href="#geography">Geography</a></li>
+                <li>3. <a href="#economy">Economy</a></li>
+            </ul>
+        </div>
+        -->
+
+        <!--
+        <h2 id="history">History</h2>
+        <p>
+            History template
+        </p>
+        -->
+
+        <!--
+        <h2 id="geography">Geography</h2>
+        <p>
+            Geographt Template (with table :D)
+        </p>
+
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>District Name</th>
+                    <th>Major City</th>
+                    <th>Area (km²)</th>
+                    <th>Primary Industry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Northern Marches</td>
+                    <td>Frostburg</td>
+                    <td>1,200</td>
+                    <td>Mining</td>
+                </tr>
+                <tr>
+                    <td>Central Valley</td>
+                    <td>Oakhaven</td>
+                    <td>3,450</td>
+                    <td>Government/Tech</td>
+                </tr>
+                <tr>
+                    <td>Coastal Reach</td>
+                    <td>Port Blue</td>
+                    <td>2,100</td>
+                    <td>Shipping</td>
+                </tr>
+            </tbody>
+        </table>
+        -->
+
+        <!--
+        <h2 id="economy">Economy</h2>
+        <p>
+            Economy template
+        </p>
+        -->
+    </div>
+
+    <div class="divider" style="height: 2px; margin-top: 40px;"></div>
+    <div style="font-size: 0.8rem; color: #666; text-align: center;">
+        Created January 29th, 2026. Last editied on the same date.
+    </div>
+
+</div>
+
+</body>
+</html>
